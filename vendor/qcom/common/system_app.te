@@ -1,1 +1,7 @@
-allow system_app vendor_aware_available_prop:file read;
+allow system_app hal_identity_citadel:binder call;
+allow system_app hal_power_default:binder call;
+allow system_app sysfs_zram:dir search;
+allow system_app sysfs_zram:file read;
+allow system_app update_engine:binder call;
+allow system_app vendor_aware_available_prop:file { open read };
+allow system_app wificond:binder call;
